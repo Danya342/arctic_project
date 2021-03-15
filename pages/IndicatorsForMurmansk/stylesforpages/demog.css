@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+body{
+	background: #e5e5e5
+}
+h1{
+	/* Демография */
+
+position: absolute;
+width: 249px;
+height: 49px;
+left: 100px;
+top: 60px;
+font-family: 'Manrope', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 49px;
+text-transform: uppercase;
+color: #0C1222;
+}
+.grafic p{
+	/* ГРАФИК миграционной убыли населения */
+
+position: absolute;
+width: 414px;
+height: 25px;
+left: 100px;
+top: 150px;
+
+font-family: Manrope;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #0C1222;
+
+
+}
+.migration{
+	/* image 12 */
+
+position: relative;
+width: 550px;
+height: 418px;
+left: 100px;
+top: 200px;
+}
+.pic{
+	/* Rectangle 7 */
+
+position: absolute;
+width: 510px;
+height: 418px;
+left: 750px;
+top: -24px;
+
+background: rgba(12, 18, 34, 0.35);
+
+}
+.pic img{
+	/* 7pMFgZVhqHY */
+
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+z-index: 3;
+background: url(.jpg);
+
+}
+.pic p{
+	/* 287 847 человек - общая Численность населения на 2020 год */
+
+position: absolute;
+width: 512px;
+height: 300px;
+left: 998px;
+top: 504px;
+
+font-family: 'Manrope', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 66px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+z-index: 5;
+}
+strong{
+	font-size: 40px;
+	font-style: bold;
+}
+.table-pic{
+	/* image 2 */
+
+position: absolute;
+width: 655px;
+height: 332px;
+left: 100px;
+top: 710px;
+
+background: url(image.png);
+
+}
