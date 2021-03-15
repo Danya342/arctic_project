@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+body{
+  background-color: #e5e5e5;
+}
+.menu-wrap {
+  background-color: #e5e5e5;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  margin-left: 1300px;
+  font-size: 1.4em;
+  font-weight: 700;
+  overflow: auto;
+  transition: .25s;
+  z-index: 10;
+}
+.menu-show {
+  margin-left: 0;
+  box-shadow: 10px 10px 10px 10px #000;
+}
+.menu-sidebar {
+  margin: 15px 0 80px 10px;
+  position: relative;
+  top: 10px;
+}
+.menu-sidebar li {
+  padding: 10px 20px 15px;
+}
+.menu-sidebar li > a {
+    /* Выплывающее меню, вкладки */
+  font-size: 1.18em;
+  font-family: 'Manrope', san-serif;
+  position: relative;
+  width: 400px;
+  height: 130px;
+  top: 50px;
+  padding-bottom: 5px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #0C1222;
+}
+.menu-sidebar li > a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: linear-gradient(to right, transparent 50.3%, #000 50.3%);
+  transition: background-position .2s .1s ease-out;
+  background-size: 200% auto;
+}
+.menu-sidebar li > a:hover::after {
+  background-position: -100% 0;
+}
+.sidebar-menu-arrow:hover::after {
+  cursor: pointer;
+  color: #fff;
+}
+.sidebar-menu-arrow:active::after {
+  top: 2px;
+}
+.menu-wrap p{
+  /* Карта перспективных северных регионов России */
+  position: relative;
+  width: 300px;
+  height: 130px;
+  left: 30px;
+  top: 50px;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #0C1222;
+}
+
+/*Hamburger Button*/
+.toggle-button {
+  position: fixed;
+  width: 34px;
+  height: 30px;
+  top: 60px;
+  left: 1200px;
+  padding: 4px;
+  transition: .25s;
+  z-index: 15;
+}
+.toggle-button:hover {
+  cursor: pointer;
+}
+.toggle-button .menu-bar {
+  position: absolute;
+  border-radius: 2px;
+  width: 80%;
+  transition: .5s;
+}
+.toggle-button .menu-bar-top {
+  border: 4px solid #fff;
+  border-bottom: none;
+  top: 0;
+}
+.toggle-button .menu-bar-middle {
+  height: 4px;
+  background-color: #fff;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  top: 4px;
+}
+.toggle-button .menu-bar-bottom {
+  border: 4px solid #fff;
+  top: 22px;
+  border-top: none;
+}
+.button-open {
+  left: 900px;
+}
+.button-open .menu-bar-top {
+  border-color: #fff;
+  transform: rotate(45deg) translate(8px, 8px);
+  transition: .5s;
+}
+.button-open .menu-bar-middle {
+  background-color: #fff;
+  transform: translate(230px);
+  transition: .1s ease-in;
+  opacity: 0;
+}
+.button-open .menu-bar-bottom {
+  border-color: #fff;
+  transform: rotate(-45deg) translate(7px, -7px);
+  transition: .5s;
+}
+
+.logo{
+    width: 100%px;
+    height: 800px;
+    display: flex;
+    box-sizing: border-box;
+}
+.bg-image-top{
+  width: 100%;
+  height: 700px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+nav{
+  position: absolute;
+    padding: 0px;
+    height: 18px;
+    margin-left: 100px;
+    margin-top: 85px;
+    box-sizing: border-box;
+  z-index: 15;
+}
+.topnav{
+    font-family: 'Manrope', sans-serif;
+    margin-top: -821px;
+    font-style: normal;
+    margin-left: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 15;
+}
+.topnav a:hover{
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom: 3px solid #000;
+}
+/* Rectangle 2 */
+.learn-more{
+position: absolute;
+width: 200px;
+height: 50px;
+left: 3px;
+top: -350px;
+z-index: 5;
+
+background: #DEDEDE;
+}
+.learn-more p{
+  /* узнать больше */
+position: relative;
+width: 200px;
+height: 27px;
+left: 15px;
+top: 17px;
+font-family: 'Manrope', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+text-transform: uppercase;
+
+color: #0C1222;
+
+}
+.learn-more .rectangle{
+  /* Rectangle 3 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 160px;
+top: 17px;
+
+background: #0C1222;
+
+}
+.menu{
+  box-sizing: border-box;
+  margin-left: 1200px;
+}
+h1{
+  margin-left: 100px;
+  margin-top: 270px;
+  z-index: 5;
+  position: absolute;
+  width: 890px;
+  height: 250px;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 80px;
+  text-transform: uppercase;
+  
+color: #FFFFFF;
+
+ box-sizing: border-box;
+}
+.menu-show {
+    margin-left: 850px;
+    box-shadow: 10px 0 10px 6px #c0c0c0;
+}
